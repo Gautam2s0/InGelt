@@ -1,0 +1,21 @@
+#nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:99vw;
+    height: 120px;
+    flex-shrink: 0;
+    background: #051C45;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#logo {
+    width: 100px;
+    height: 91.121px;
+    flex-shrink: 0;
+    margin-left: 150px;
+    cursor: pointer;
+
+}
