@@ -13,10 +13,10 @@ function App() {
     <div className="App">
         <Navbar/>
         <div style={{marginTop:"8%", maxWidth:"100%",boxSizing:"border-box"}} >
-        {/* <Preparation/> */}
-        {/* <Class/> */}
-        {/* <Services/> */}
-        {/* <Comment/> */}
+        <Preparation/>
+        <Class/>
+        <Services/>
+        <Comment/>
         {/* <Touch/> */}
         </div>
     </div>

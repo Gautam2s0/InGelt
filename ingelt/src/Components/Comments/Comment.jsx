@@ -9,7 +9,8 @@ export const Comment = () => {
   return (
     <Stack
       
-      w={"80vw"}
+      maxW={["90%","90%","90%","80%"]}
+      border={"1px solid red"}
       m={"auto"}
       boxSizing="border-box"
       pb={'8%'}
@@ -32,7 +33,7 @@ export const Comment = () => {
         <Box textAlign={"start"} ml={"0%"}>
           <Flex
             mb="6%"
-            fontSize={"3.5rem"}
+            fontSize={["1.5rem","2rem","2.5rem","3.5rem"]}
             gap={"15px"}
             borderlenght="50"
             fontWeight={600}
@@ -40,7 +41,7 @@ export const Comment = () => {
             <Text textDecoration={"underline"}>Freda</Text>
             <Text>Collier</Text>
           </Flex>
-          <Box width={"30vw"} fontSize={"1.5rem"}>
+          <Box width={"30vw"} fontSize={[".8rem","1rem","1.1rem","1.5rem"]}>
             <Image src={Quotes} />
             <Text>
               Ipsum vel nobis doloremque est aut non accusantium vero molestias.
@@ -53,10 +54,12 @@ export const Comment = () => {
             </Box>
           </Box>
         </Box>
-        <Box width={"50vw"}>
+        <Box
+         width={["80%","80%","60%","50%"]}
+         >
           <Box
-            width="400px"
-            height="558px"
+            width="100%"
+            height={["258px","358px","458px","558px"]}
             transform="rotate(-25.316deg)"
             flexShrink="0"
             borderRadius="40px"
@@ -66,7 +69,7 @@ export const Comment = () => {
             <Image
               // w={"400px"}
               w="100%"
-              h={"558px"}
+              height={["258px","358px","458px","558px"]}
               border={"1pz solid #fff"}
               borderRadius={"40px"}
               transform="rotate(25.316deg)"
@@ -79,9 +82,9 @@ export const Comment = () => {
        direction={'row'}
       >
       <Box
-      width="50px"
-      height="50px"
-      borderBottom="100px solid #fff" // Replace #000 with your desired background color
+      width={["20px","20px","35px","50px"]}
+      height={["20px","20px","35px","50px"]}
+      borderBottom="100px solid #fff" 
       borderLeft="50px solid transparent"
       borderRight="50px solid transparent"
       transform="rotate(200deg)"

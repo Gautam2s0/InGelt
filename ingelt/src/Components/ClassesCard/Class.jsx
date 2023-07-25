@@ -25,7 +25,8 @@ export const Class = () => {
     ]
   return (
    <Stack
-   direction={"row"}
+   maxW={'100%'}
+   direction={["column","column","row","row"]}
    justify={'center'}
    align={"center"}
    spacing={8}

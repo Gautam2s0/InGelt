@@ -39,52 +39,55 @@ export const Services = () => {
 
   return (
     <Stack
-    w={'99vw'}
-    h={"1080px"}
+    maxW={'100vw'}
+    h={["2080px","2080px","2000px","1080px"]}
     bg={"linear-gradient(135deg, #001E43 0%, #570169 100%)"}
     overflow={'hidden'}
     color={"#FFF"}
+    mt='5%'
     >
         <Heading
         mt={'5%'}
-        textAlign={'end'}
-        mr={'20%'}
+        textAlign={['center',"center","center","end"]}
+        mr={["0","0","0","20%"]}
         fontSize={'3.5rem'}
         >
         Our Services
         </Heading>
      <Stack
-     direction={"row"}
+     direction={["column","column","column","row"]}
      spacing={16}
-     h={'1080px'}
-    mt={'5%'}
+    mt={['15%','15%','10%','5%']}
      justify={"space-around"}
      >
      <Box
      id="mobile"
-        w="491px"
+     w={["80%","70%","60%","50%"]}
         h={"940.4px"}
         borderRadius={"60px"}
         border={"2px solid rgba(0, 0, 0, 0.30)"}
         bg={"#FBE2DD"}
+        m={'auto'}
+        
       >
         <Box
-          w="470.619px"
+          w={["97%"]}
           h={"922.195px"}
           borderRadius={"50px"}
           bg={"#060405"}
           m={"auto"}
           position={"relative"}
           top={"1%"}
+          
         >
           <Box
-            w={"439.121px"}
+           w={["97%"]}
             h="896.193px"
             borderRadius={"40px"}
             bg="linear-gradient(0deg, #FFF 0%, #FFF 100%), #722121;"
             m={"auto"}
             position={"relative"}
-            top={"1.5%"}
+            top={["1.0%","1.0%","1.0%","1.5%"]}
           >
             <Image m={"auto"} src={group} alt="error" />
             <Image
@@ -95,18 +98,16 @@ export const Services = () => {
               alt="error"
             />
             <Box
-            w='650px'
-            h={'732px'}
-            
-            m={'auto'}
-           
-            
+           w={["110%"]}
+           m='auto'
+            h={['800px','770px',"732px","732px"]}
+          
             >
             <Image
               w={"100%"}
               src={women}
               alt="error"
-              h={'95%'}
+              h={['91%','91%','91%','95%']}
               mt={'5%'}
               overflow={'hidden'}
               ml={'-13%'}
@@ -118,8 +119,12 @@ export const Services = () => {
       </Box>
 
       {/* *************************** Grid *********************** */}
-      <Box>
+      <Box
+      maxW={["95%","95%","95%","100%"]}
+      mr={['0%','0%','0%','5%']}
+      >
       <Grid
+      
         templateColumns='repeat(2, 1fr)' 
         columnGap={"8%"}
         gap={'10%'}
