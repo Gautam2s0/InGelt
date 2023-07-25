@@ -7,15 +7,15 @@ export const ContactUs = () => {
   const [message,setMessage]=useState("");
 
   return (
-    <Stack>
+    <Stack  w="100%">
       <Stack>
-        <Heading color={"0D0D0D"} fontSize={"4rem"}>
+        <Heading color={"0D0D0D"} fontSize={["1rem","2rem",'2.5rem','4rem']}>
           Contact Us
         </Heading>
-        <Text fontSize={"1.5rem"} letterSpacing={"-.24px"}>
+        <Text fontSize={["1.1rem","1.5rem"]} letterSpacing={"-.24px"}>
           Feel Free to contact us any time. We will get
         </Text>
-        <Text fontSize={"1.5rem"} letterSpacing={"-.24px"}>
+        <Text fontSize={["1.1rem","1.5rem"]} letterSpacing={"-.24px"}>
           back to you as soon as we can!.
         </Text>
         <Box className="inputTags"

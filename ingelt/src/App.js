@@ -17,7 +17,7 @@ function App() {
         <Class/>
         <Services/>
         <Comment/>
-        {/* <Touch/> */}
+        <Touch/>
         </div>
     </div>
   );

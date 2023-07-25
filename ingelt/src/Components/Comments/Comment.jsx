@@ -9,11 +9,11 @@ export const Comment = () => {
   return (
     <Stack
       
-      maxW={["90%","90%","90%","80%"]}
-      border={"1px solid red"}
+      w={["100vw","100vw","80vw","80vw"]}
       m={"auto"}
       boxSizing="border-box"
       pb={'8%'}
+      display={["none","none","none","block"]}
     >
       <Stack
         direction={"row"}
@@ -21,7 +21,7 @@ export const Comment = () => {
         mt="8%"
         borderRadius={'30px'}
         
-        p="4% 1% 4% 8%"
+        p={["4% 1% 4% 8%","4% 1% 4% 8%","4% 1% 4% 8%","4% 1% 4% 8%"]}
         bg="#FFF"
         fill="#FFF"
         filter="drop-shadow(0px 4px 71px rgba(0, 0, 0, 0.12))"
@@ -33,7 +33,7 @@ export const Comment = () => {
         <Box textAlign={"start"} ml={"0%"}>
           <Flex
             mb="6%"
-            fontSize={["1.5rem","2rem","2.5rem","3.5rem"]}
+            fontSize={"3.5rem"}
             gap={"15px"}
             borderlenght="50"
             fontWeight={600}
@@ -41,7 +41,7 @@ export const Comment = () => {
             <Text textDecoration={"underline"}>Freda</Text>
             <Text>Collier</Text>
           </Flex>
-          <Box width={"30vw"} fontSize={[".8rem","1rem","1.1rem","1.5rem"]}>
+          <Box width={"30vw"} fontSize={"1.5rem"}>
             <Image src={Quotes} />
             <Text>
               Ipsum vel nobis doloremque est aut non accusantium vero molestias.
@@ -54,11 +54,9 @@ export const Comment = () => {
             </Box>
           </Box>
         </Box>
-        <Box
-         width={["80%","80%","60%","50%"]}
-         >
+        <Box >
           <Box
-            width="100%"
+            width={["100px","150px","200px","400px"]}
             height={["258px","358px","458px","558px"]}
             transform="rotate(-25.316deg)"
             flexShrink="0"
@@ -67,8 +65,7 @@ export const Comment = () => {
             ml="25%"
           >
             <Image
-              // w={"400px"}
-              w="100%"
+              width={["100px","150px","200px","400px"]}
               height={["258px","358px","458px","558px"]}
               border={"1pz solid #fff"}
               borderRadius={"40px"}
@@ -82,9 +79,9 @@ export const Comment = () => {
        direction={'row'}
       >
       <Box
-      width={["20px","20px","35px","50px"]}
-      height={["20px","20px","35px","50px"]}
-      borderBottom="100px solid #fff" 
+      width="50px"
+      height="50px"
+      borderBottom="100px solid #fff" // Replace #000 with your desired background color
       borderLeft="50px solid transparent"
       borderRight="50px solid transparent"
       transform="rotate(200deg)"

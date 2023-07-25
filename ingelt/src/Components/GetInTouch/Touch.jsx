@@ -7,6 +7,7 @@ import { ContackInfo } from './ContackInfo';
 export const Touch = () => {
   return (
     <Stack
+    w='100%'
     
     >
         <Box id="heading"
@@ -14,7 +15,7 @@ export const Touch = () => {
         textAlign={'center'}
         >
             <Heading
-             fontSize={"4.5rem"}
+             fontSize={["2rem","2.5rem","3.5rem","4.5rem"]}
              color={'#0D1948;'}
             
             
@@ -22,13 +23,13 @@ export const Touch = () => {
             Get in Touch with Us
             </Heading>
             <Text
-            fontSize={'2rem'}
+            fontSize={["1rem","1.1rem","1.5rem","2rem"]}
             color={'rgba(0, 0, 0, 0.60);'}
             >Elevate Your Institute Management and Student Success - Contact Us Now!</Text>
         </Box>
 
         <Stack 
-        w={'80%'}
+        w={['95%','95%','90%','80%']}
         m='auto'
         direction={'row'}
          spacing={48}

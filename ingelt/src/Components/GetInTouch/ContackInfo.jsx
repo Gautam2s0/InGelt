@@ -39,7 +39,9 @@ export const ContackInfo = () => {
                  
                  
                 >
-                    <Heading>Contact Information</Heading>
+                    <Heading
+                        fontSize={['1rem','1.3rem']}
+                    >Contact Information</Heading>
                     <Flex
                     mt={'10%'}
                     justify={"start"}

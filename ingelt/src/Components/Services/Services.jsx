@@ -39,7 +39,7 @@ export const Services = () => {
 
   return (
     <Stack
-    maxW={'100vw'}
+    w={'100%'}
     h={["2080px","2080px","2000px","1080px"]}
     bg={"linear-gradient(135deg, #001E43 0%, #570169 100%)"}
     overflow={'hidden'}
@@ -62,7 +62,7 @@ export const Services = () => {
      >
      <Box
      id="mobile"
-     w={["80%","70%","60%","50%"]}
+     w={["80%","70%","60%","30%"]}
         h={"940.4px"}
         borderRadius={"60px"}
         border={"2px solid rgba(0, 0, 0, 0.30)"}
@@ -105,12 +105,13 @@ export const Services = () => {
             >
             <Image
               w={"100%"}
+              transform=" scaleX(1.3)"
               src={women}
               alt="error"
               h={['91%','91%','91%','95%']}
               mt={'5%'}
               overflow={'hidden'}
-              ml={'-13%'}
+              // ml={'-13%'}
             />
             </Box>
           </Box>
