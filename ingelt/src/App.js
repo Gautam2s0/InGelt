@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './Components/Navbar';
-import { Preparation } from './Components/Preparation';
+import { Preparation } from './Components/Preparation/Preparation';
 import { ClassCar } from './Components/ClassesCard/ClassCar';
 import { Class } from './Components/ClassesCard/Class';
 import { Services } from './Components/Services/Services';
@@ -13,11 +13,11 @@ function App() {
     <div className="App">
         <Navbar/>
         <div style={{marginTop:"8%", maxWidth:"100%",boxSizing:"border-box"}} >
-        <Preparation/>
-        <Class/>
-        <Services/>
-        <Comment/>
-        <Touch/>
+        {/* <Preparation/> */}
+        {/* <Class/> */}
+        {/* <Services/> */}
+        {/* <Comment/> */}
+        {/* <Touch/> */}
         </div>
     </div>
   );

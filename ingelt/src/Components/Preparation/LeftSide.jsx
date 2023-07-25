@@ -1,23 +1,11 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Input,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
-import React, { useState } from "react";
-import { AiOutlineCheckCircle } from "react-icons/ai";
-import { PiNumberCircleTwoThin, PiNumberCircleThreeThin } from "react-icons/pi";
-import ReactFlagsSelect from "react-flags-select";
-import girl from "../images/girlImg.png";
-import { useToast } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Input, Stack, Text, useToast } from '@chakra-ui/react';
+import React, { useState } from 'react'
+import ReactFlagsSelect from 'react-flags-select';
+import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { PiNumberCircleThreeThin, PiNumberCircleTwoThin } from 'react-icons/pi';
 
-
-export const Preparation = () => {
-  const [selected, setSelected] = useState("");
+export const LeftSide = () => {
+    const [selected, setSelected] = useState("");
   const [name,setName]=useState("");
   const [number,SetNumber]=useState("");
   const toast = useToast();
@@ -66,25 +54,17 @@ export const Preparation = () => {
     }
     
   }
-  
-
-  return (
+  return(
     <Stack
-    
-      direction={"row"}
-      justifyContent={"space-around"}
-      fontFamily={"Inter"}
-      boxSizing={"border-box"}
-    >
-      <Stack
+      w='50%'
+      border={'1px solid red'}
       
        >
         {/* heading of Preparation */}
         <Heading 
-        w={'732px'}
           color={"#001E43"}
           textAlign={"center"}
-          fontSize="45px"
+          fontSize={["15px","25px","35px","45px"]}
           fontStyle="normal"
           fontWeight="700"
           lineHeight="normal"
@@ -96,7 +76,7 @@ export const Preparation = () => {
         <Box
           color="rgba(0, 0, 0, 0.60)"
           textAlign="center"
-          fontSize="18px"
+          fontSize={["8px","10px","14px","18px"]}
           fontWeight="400"
           lineHeight="29px" /* 161.111% */
           
@@ -105,27 +85,31 @@ export const Preparation = () => {
           <Text >. British Council Cretified Teacher</Text>
           <Stack
           mt={'3%'}
-            width="635px"
+            width="80%"
             pb={'4%'}
             flexShrink="0"
             borderRadius="53px"
             background="#FFF"
             boxShadow="0px 4px 50px 0px rgba(13, 25, 72, 0.12)"
-            ml='74px'
+            boxSizing='border-box'
+            border={'1px solid red'}
             
           >
             <Stack id="form"
-            
+            w={'100%'}
+            pb='5%'
             spacing={6}
           
             >
               {/*  form Container */}
               <Stack
+              w="100%"
                mt={'3%'}
                 id="formHeader"
                 direction={"row"}
                 justifyContent={"center"}
                 spacing={24}
+                
               >
                 <Flex align={"center"} color="#333" fontWeight={'500'} gap={"2px"}>
                   <AiOutlineCheckCircle  />
@@ -145,7 +129,7 @@ export const Preparation = () => {
               >
                 <Heading
                   color="#001E43"
-                  fontSize=" 36px"
+                  fontSize={["18px","20px","28px","36px"]}
                   fontWeight="600"
                   lineHeight="normal"
                   textAlign={'start'}
@@ -153,13 +137,14 @@ export const Preparation = () => {
                   Free IELTS Classes
                 </Heading>
                 <Stack id="Cals"
+                mt={'5%'}
                spacing={8}
                
                 >
                    <Input
                    type="text"
                    placeholder="Enter Your Name"
-                   width="492px"
+                   width="95%"
                    height="57px"
                    borderRadius="10px"
                    background="#FFF"
@@ -244,40 +229,5 @@ export const Preparation = () => {
           </Stack>
         </Box>
       </Stack>
-      {/* right side of form conatiner */}
-      <Stack w={"523px"}
-      mt={'10%'}
-      ml="5%"
-      >
-        <Stack>
-          {/* <Text>Student Visa</Text>
-          <Text>Work Visa</Text>
-          <Text>Permanents Residence</Text> */}
-          
-          <Box 
-          width= "523px"
-          height= "525px"
-          flexShrink= {0}
-          borderRadius= "525px"
-           background= "#001E43"
-          >
-          <Image 
-          width= "525px"
-          height= "535.554px"
-          flexShrink= "0"
-          position={'relative'}
-          top='-1%'
-          borderRadius={'50%'}
-          overflow={'hidden'}
-          borderTopRadius={'0px'}
-          
-          // width='cover'
-           
-              src={girl} 
-             />
-          </Box>
-        </Stack>
-      </Stack>
-    </Stack>
-  );
-};
+  )
+}
